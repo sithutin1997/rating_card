@@ -1,0 +1,64 @@
+.card__title, .card__body, .card__image, .card__selected {
+    text-align: center;
+}
+
+.card__body {
+    opacity: 50%;
+}
+@media screen and (min-width: 1001px) { 
+    .card__selected {
+        background-color: grey;
+        border-radius: 20px;
+        width: 70%;
+        margin: 0 auto;
+        height: 10%;
+        align-content: center;
+        padding: 2%;
+    }
+    .card__image > img {
+        margin-bottom: 8%;
+    }
+    .card__selected > span{
+        color: rgb(255, 191, 0);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .card__selected {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: grey;
+        border-radius: 20px;
+        width: 70%;
+        margin: 0 auto;
+        height: 10%;
+        align-content: center;
+    }
+    
+    .card__selected > span{
+        color: rgb(255, 191, 0);
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card__selected {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: grey;
+        border-radius: 20px;
+        width: 70%;
+        margin: 0 auto;
+        height: 10%;
+        align-content: center;
+    }
+    .card__image > img {
+        margin-bottom: 8%;
+    }
+    .card__selected > span{
+        color: rgb(255, 191, 0);
+        font-size: 0.8rem;
+    }
+}

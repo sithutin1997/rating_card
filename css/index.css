@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: #000000;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: overpass;
+    src: url('https://fonts.google.com/specimen/Overpass');
+}
+@media  only screen and (min-width: 1001px ) {   
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .card__container {
+        display: flex;
+        max-height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 8%;
+    }
+    .card {
+        display: flex;
+        width: calc(13vh + 20vw);
+        height: 50vh;
+        margin: auto;
+        background-color: #272626;
+        border-radius: 20px;
+    }
+    
+    .card__icon > img{
+        background-color: #202020;
+        padding: 3%;
+        display: inline-block;
+        border-radius: 50%;
+        width: 2.5em;
+    }
+    .card__title {
+        height: 20%;
+    }
+    .card__title > h3{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        color: #FFFFFF;
+        font-size: 2rem;
+    }
+    
+    .card__body > p {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        font-size: 1rem;
+    }
+    
+    .rating {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+    
+    .rating > button {
+        background-color: #202020;
+        display: inline-block;
+        align-content: center;
+        padding: 5%;
+        width: 3rem;
+        border-style: none;
+        border-radius: 50%;
+        color: #FFFFFF;
+    }
+    .rating > button:hover {
+        background-color: orange;
+    }
+    .rating > .rating__btn--active {
+        background-color: grey;
+    }
+    .btn > button {
+        background-color: rgb(255, 181, 42);
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 20px;
+        border-style: none;
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .btn > button:hover {
+        background-color: white;
+        color: orange;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .card__container {
+        display: flex;
+        max-height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1.5rem;
+        padding: 8%;
+    }
+    .card {
+        display: flex;
+        width: calc(13vh + 20vw);
+        height: 50vh;
+        margin: auto;
+        border-radius: 20px;
+        background-color: #272626;
+    }
+    
+    .card__icon > img{
+        background-color: #202020;
+        padding: 3%;
+        display: inline-block;
+        border-radius: 50%;
+        width: 2rem;
+    }
+    
+    .card__title > h3{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    
+    .card__body > p {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        font-size: 0.8rem;
+    }
+    
+    .rating {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+    
+    .rating > button {
+        background-color: #202020;
+        display: inline-block;
+        align-content: center;
+        padding: 5%;
+        width: 2rem;
+        border-style: none;
+        border-radius: 50%;
+        color: #FFFFFF;
+    }
+    .rating > button:hover {
+        background-color: orange;
+    }
+    .rating > .rating__btn--active {
+        background-color: grey;
+    }
+    .btn > button {
+        background-color: rgb(255, 181, 42);
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 20px;
+        border-style: none;
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .btn > button:hover {
+        background-color: white;
+        color: orange;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .card__container {
+        display: flex;
+        max-height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 8%;
+    }
+    .card {
+        display: flex;
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+        border-radius: 20px;
+        background-color: #272626;
+    }
+    .card__title {
+        height: 20%;
+    }
+    .card__icon > img{
+        background-color: #202020;
+        padding: 3%;
+        display: inline-block;
+        border-radius: 50%;
+        width: 2.5em;
+    }
+    
+    .card__title > h3{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        height: 100%;
+    }
+    
+    .card__body > p {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        font-size: 0.8rem;
+    }
+    
+    .rating {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+    
+    .rating > button {
+        background-color: #202020;
+        display: inline-block;
+        align-content: center;
+        padding: 5%;
+        width: 2rem;
+        border-style: none;
+        border-radius: 50%;
+        color: #FFFFFF;
+    }
+    .rating > button:hover {
+        background-color: orange;
+    }
+    .rating > .rating__btn--active {
+        background-color: grey;
+    }
+    .btn > button {
+        background-color: rgb(255, 181, 42);
+        width: 100%;
+        height: 2rem;
+        border-radius: 20px;
+        border-style: none;
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .btn > button:hover {
+        background-color: white;
+        color: orange;
+    }
+}
